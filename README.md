@@ -29,14 +29,15 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 - DD2EAA é/VZ9l
 
 # GameShark
-% Write GameShark to EVs and IVs first
-% You can use the pk2 files given (All legit)
-% direct to slot 5 EVs/IVs
+% Write GameShark to EVs and IVs first  
+% You can use the pk2 files given (All legit)  
+
+% direct to slot 5 EVs/IVs  
 - FF8AF5 _A?e09
 - FF8BDA _A?f!/
-- FF89C3 _A?d's♂
-% direct to slot 6 EVs/IVs
+- FF89C3 _A?d's♂ 
+
+% direct to slot 6 EVs/IVs   
 - FF8A25 _A?eMZ
 - FF8BDB _A?f!./
 - FF89C3 _A?d's♂
-
