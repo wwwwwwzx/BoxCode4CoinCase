@@ -41,8 +41,3 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 - FF8A25 _A?eMZ
 - FF8BDB _A?f./
 - FF89C3 _A?d's♂
-
-% direct to BOX9 Slot 1 EVs/IVs
-- FF8AB8 _A?e9z
-- FF8BB1 _A?f9s
-- FF89C3 _A?d's♂
