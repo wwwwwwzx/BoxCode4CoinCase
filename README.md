@@ -42,7 +42,7 @@ If the length of current OT is `N`, do the clear procedure `N - 2` times.
 - Slot 6: 0xDB25
 
 ## Example Codes
-- Write XX to YYZZ: 3e XX ZZ YY d0 c9
+- Write value 0xXX to address 0xYYZZ: 3e XX ZZ YY d0 c9
 - Keep enemy 0 HP: ea 00 d1 c9
 - Keep enemy shiny: 3e fa ea f5 d0 3e aa ea f6 d0 c9
 - Keep enemy being Celebi: 3e fb ea ed d0 c9
@@ -67,12 +67,5 @@ If the length of current OT is `N`, do the clear procedure `N - 2` times.
 - FF89C3 _A?d's♂
 
 
-## Stop
+## Stop running
 - FF89C9 _A?d'd3
-
-
-# NTR Client Note (Personal use)
-This part has nothing to do with Coin Case Glitch  
-Assume process id of `trl` is 0x33
-- Modify Slot 2 EVs: Write(0x8A2406C+0xDA65,(0x21,0xa3,0xce,0x22,0x22,0x22,0x22,0xc9),0x33)
-- Enable Code: Write(0x8A3C1C5,(0xC3,0x35,0xDA),0x33)
