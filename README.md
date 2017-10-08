@@ -1,4 +1,5 @@
-Box names for coin case gliches
+Box names for coin case gliches.  
+Note: _ = Space
 
 # Guide
 https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_want_in_gold_silver/
@@ -29,8 +30,23 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 - DD2EAA é/VZ9l
 
 # GameShark
-% Write GameShark to EVs and IVs first  
-% You can use the pk2 files given (All legit)  
+% Write GameShark Code to EVs and IVs first, starting from following addresses
+- Slot 2: 0xDA65
+- Slot 5: 0xDAF5
+- Slot 6: 0xDB25
+
+% Example Codes
+- Keep enemy 0 HP: ea 00 d1 c9
+- Keep enemy shiny: 3e fa ea f5 d0 3e aa ea f6 d0 c9
+- Keep enemy being Celebi: 3e fb ea ed d0 c9
+- No wall: 21 a3 ce 22 22 22 22 c9
+
+% You can use the pk2 files given (All legit)  
+
+% direct to slot 2 EVs/IVs  
+- FF8A65 _A?ezm
+- FF8BDA _A?f!/
+- FF89C3 _A?d's♂
 
 % direct to slot 5 EVs/IVs  
 - FF8AF5 _A?e09
@@ -41,3 +57,11 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 - FF8A25 _A?eMZ
 - FF8BDB _A?f./
 - FF89C3 _A?d's♂
+
+% Turn off
+- FF89C9 _A?d'd3
+
+# NTR Client Note (Personal use. This part has nothing to do with Coin Case Glitch)
+Assume process id of `trl` is 0x33
+- Modify Slot 2 EVs: Write(0x8A2406C+0xDA35,(0x21,0xa3,0xce,0x22,0x22,0x22,0x22,0xc9),0x33)
+- Enable Code: Write(0x8A3C1C5,(0xC9,0x35,0xDA),0x33)
