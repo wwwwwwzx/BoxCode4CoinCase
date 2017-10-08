@@ -10,13 +10,14 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 - DA3059 !/XZza   % TID to 22796
 - DA310C !/YZAM
 - DB4A86 ./rZ?a   % OT to GF
-- DB4B85 ./sZ?]
-- DB4C50 ./tZxZ
+- DB4B85 ./sZ?] 
+- DB4C50 ./tZxZ   % clear trash bytes in OT
 - DB4D50 ./uZxZ
-- DB4E00 ./vZAA   % clear trash bytes in OT
-- DB4F00 ./wZAA
-- DB5000 ./xZAA
-- DB5100 ./yZAA
+- DB4E50 ./vZxZ   
+- DB4F50 ./wZxZ
+- DB5050 ./xZxZ
+
+If the length of current OT is `N`, do the clear procedure `N - 2` times.
 
 # Shiny for roamers
 ## Raikou
@@ -61,7 +62,8 @@ https://www.reddit.com/r/pokemon/comments/4a6abq/guide_getting_any_pokémon_you_
 % Turn off
 - FF89C9 _A?d'd3
 
-# NTR Client Note (Personal use. This part has nothing to do with Coin Case Glitch)
+# NTR Client Note (Personal use)
+This part has nothing to do with Coin Case Glitch  
 Assume process id of `trl` is 0x33
 - Modify Slot 2 EVs: Write(0x8A2406C+0xDA35,(0x21,0xa3,0xce,0x22,0x22,0x22,0x22,0xc9),0x33)
-- Enable Code: Write(0x8A3C1C5,(0xC9,0x35,0xDA),0x33)
+- Enable Code: Write(0x8A3C1C5,(0xC3,0x35,0xDA),0x33)
