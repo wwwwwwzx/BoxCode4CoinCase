@@ -30,13 +30,19 @@ If the length of current OT is `N`, do the clear procedure `N - 2` times.
 - DD2DFA é/UZ59
 - DD2EAA é/VZ9l
 
-# GameShark
-% Write GameShark Code to EVs and IVs first, starting from following addresses
+# Run arbitrary code continuously
+
+## Programmer manual
+- Guide http://glitchcity.info/wiki/GB_Programming
+- Code to hex http://glitchcity.info/wiki/The_Big_HEX_List
+
+## Write ASM Codes to EVs and IVs first, starting from following addresses
 - Slot 2: 0xDA65
 - Slot 5: 0xDAF5
 - Slot 6: 0xDB25
 
-% Example Codes
+## Example Codes
+- Write XX to YYZZ: 3e XX ZZ YY d0 c9
 - Keep enemy 0 HP: ea 00 d1 c9
 - Keep enemy shiny: 3e fa ea f5 d0 3e aa ea f6 d0 c9
 - Keep enemy being Celebi: 3e fb ea ed d0 c9
@@ -44,6 +50,7 @@ If the length of current OT is `N`, do the clear procedure `N - 2` times.
 
 % You can use the pk2 files given (All legit)  
 
+## Run codes
 % direct to slot 2 EVs/IVs  
 - FF8A65 _A?ezm
 - FF8BDA _A?f!/
@@ -52,18 +59,20 @@ If the length of current OT is `N`, do the clear procedure `N - 2` times.
 % direct to slot 5 EVs/IVs  
 - FF8AF5 _A?e09
 - FF8BDA _A?f!/
-- FF89C3 _A?d's♂ 
+- FF89C3 _A?d's♂
 
 % direct to slot 6 EVs/IVs   
 - FF8A25 _A?eMZ
 - FF8BDB _A?f./
 - FF89C3 _A?d's♂
 
-% Turn off
+
+## Stop
 - FF89C9 _A?d'd3
+
 
 # NTR Client Note (Personal use)
 This part has nothing to do with Coin Case Glitch  
 Assume process id of `trl` is 0x33
-- Modify Slot 2 EVs: Write(0x8A2406C+0xDA35,(0x21,0xa3,0xce,0x22,0x22,0x22,0x22,0xc9),0x33)
+- Modify Slot 2 EVs: Write(0x8A2406C+0xDA65,(0x21,0xa3,0xce,0x22,0x22,0x22,0x22,0xc9),0x33)
 - Enable Code: Write(0x8A3C1C5,(0xC3,0x35,0xDA),0x33)
